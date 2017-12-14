@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <section id="yaoli_paypalfilter" translate="label" type="text" sortOrder="161812" showInDefault="1" showInWebsite="1"
+                 showInStore="1">
+            <label>PayPal Filter</label>
+            <tab>sendorder</tab>
+            <resource>Amasty_Feed::general</resource>
+
+            <group id="general" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="0" showInStore="0">
+                <label>Paypal Filter Configuration</label>
+                <field id="enable" translate="label comment" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>PaypalFilter Enable</label>
+                    <comment>Enable OR Disable SendOrder</comment>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+
+                <field id="category_id" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Limit Category ID</label>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
